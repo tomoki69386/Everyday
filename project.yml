@@ -1,4 +1,4 @@
-name: Template
+name: Everyday
 fileGroups:
   - README.md
 options:
@@ -8,33 +8,33 @@ config:
   Debug: debug
   Release: release
 targets:
-  Template:
+  Everyday:
     type: application
     platform: iOS
     developmentTarget: 13.0
     sources:
-      - path: Template
+      - path: Everyday
     scheme: {}
     settings:
       base:
         TARGETED_DEVICE_FAMILY: 1
         DEVELOPMENT_TEAM: AV9FQ3YF56
-        PRODUCT_BUNDLE_IDENTIFIER: com.tomoki-sun.app.ios.template
+        PRODUCT_BUNDLE_IDENTIFIER: com.tomoki-sun.app.ios.Everyday
       configs:
         Debug:
           CODE_SIGN_IDENTITY: iPhone Developer
-          INFOPLIST_FILE: Template/Resources/Info/Debug.plist
+          INFOPLIST_FILE: Everyday/Resources/Info/Debug.plist
         Release:
           CODE_SIGN_IDENTITY: iPhone Distribution
-          INFOPLIST_FILE: Template/Resources/Info/Release.plist
-  TemplateTests:
+          INFOPLIST_FILE: Everyday/Resources/Info/Release.plist
+  EverydayTests:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - path: TemplateTests
+      - path: EverydayTests
     dependencies:
-      - target: Template
+      - target: Everyday
     scheme:
       gatherCoverageData: true
       testTargets:
-        - TemplateTests
+        - EverydayTests

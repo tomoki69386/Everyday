@@ -1,12 +1,12 @@
 //
 //  UIBarButtonItem+EmptyTitleTests.swift
-//  TemplateTests
+//  EverydayTests
 //
 //  Created by 築山朋紀 on 2020/08/24.
 //
 
 import XCTest
-@testable import Template
+@testable import Everyday
 
 class UIBarButtonItem_EmptyTitleTests: XCTestCase {
     func testEmptyTitle() {
