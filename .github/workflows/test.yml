@@ -36,7 +36,7 @@ jobs:
     - name: iOS test
       run: |
         set -o pipefail
-        xcodebuild build-for-testing test-without-building -project Template.xcodeproj -scheme TemplateTests -configuration Debug -sdk iphonesimulator -destination "name=iPhone 8" ENABLE_TESTABILITY=YES | xcpretty -c
+        xcodebuild build-for-testing test-without-building -project Everyday.xcodeproj -scheme EverydayTests -configuration Debug -sdk iphonesimulator -destination "name=iPhone 8" ENABLE_TESTABILITY=YES | xcpretty -c
 
     - name: codecov
       run: bash <(curl -s https://codecov.io/bash)

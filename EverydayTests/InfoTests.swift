@@ -1,6 +1,6 @@
 //
 //  InfoTests.swift
-//  TemplateTests
+//  EverydayTests
 //
 //  Created by 築山朋紀 on 2020/08/26.
 //

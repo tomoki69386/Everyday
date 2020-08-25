@@ -1,12 +1,12 @@
 //
 //  LoggerTests.swift
-//  TemplateTests
+//  EverydayTests
 //
 //  Created by 築山朋紀 on 2020/08/26.
 //
 
 import XCTest
-@testable import Template
+@testable import Everyday
 
 class LoggerTests: XCTestCase {
     func testLogger() {
