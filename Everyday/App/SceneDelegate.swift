@@ -21,8 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = .init(windowScene: windowScene)
-        let dependency = RootViewController.Dependency(
-            rootViewController: .init())
+        let viewController = ContinuationListViewController(dependency: .init())
+        let navigationController = UINavigationController(rootViewController: viewController)
+        let dependency = RootViewController.Dependency(rootViewController: navigationController)
         window?.rootViewController = RootViewController(dependency: dependency)
         window?.makeKeyAndVisible()
     }
